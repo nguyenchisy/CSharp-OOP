@@ -1,10 +1,10 @@
-public class Students
+public class Student
 {
     public int Id { get; set; }
     public string Name { get; set; }
     public int Age { get; set; }
     public string Grade { get; set; }
-    public Students(int id, string name, int age, string grade)
+    public Student(int id, string name, int age, string grade)
     {
         Id = id;
         Name = name;
