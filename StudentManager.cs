@@ -1,13 +1,13 @@
 public class StudentManager
 {
-    private List<Students> students;
+    private List<Student> students;
 
     public StudentManager()
     {
-        students = new List<Students>();
+        students = new List<Student>();
     }
 
-    public void AddStudent(Students student)
+    public void AddStudent(Student student)
     {
         students.Add(student);
     }
@@ -21,12 +21,12 @@ public class StudentManager
         }
     }
 
-    public Students GetStudent(int id)
+    public Student GetStudent(int id)
     {
         return students.FirstOrDefault(s => s.Id == id);
     }
 
-    public List<Students> GetAllStudents()
+    public List<Student> GetAllStudents()
     {
         return students;
     }
